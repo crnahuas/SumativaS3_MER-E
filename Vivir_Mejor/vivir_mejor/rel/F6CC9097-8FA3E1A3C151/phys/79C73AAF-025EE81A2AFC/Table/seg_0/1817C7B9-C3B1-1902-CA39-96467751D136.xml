@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="Cuidador" directorySegmentName="seg_0" id="1817C7B9-C3B1-1902-CA39-96467751D136">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_persona" id="3E70F306-E1D1-819D-C3E1-0A7E76B6E251">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_cuidador_personal" id="26523306-A254-DB98-AC1C-1484106DC943">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="pk_cuidador" id="4B937BAA-2CB6-DDC6-CD8B-A3AA88A0DA40">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

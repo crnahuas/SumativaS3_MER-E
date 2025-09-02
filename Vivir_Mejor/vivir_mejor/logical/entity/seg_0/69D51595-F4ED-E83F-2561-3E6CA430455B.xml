@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="69D51595-F4ED-E83F-2561-3E6CA430455B" name="Persona">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>22B57B07-1094-1CCC-B443-62D9786C6902</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id persona" id="5558444B-8965-9F55-0B9F-53B25B89027E">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>2E266D27-69FE-F226-7761-8C82EACFAEDF</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="315914D3-0AE9-16D1-BBB4-ED82B4D09ACC">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>35359714-2C90-986E-D1B1-5A7C55B5CC80</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre completo" id="49C1EE5A-E7E3-BE5F-65D6-FAF3C6026AB1">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>576AE9B3-8A24-1B9A-1194-CB0A3754E2ED</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha nacimiento" id="615F36F8-827A-C1D3-285F-D03228E75799">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>C7398D84-39E6-2448-C575-215951EA4624</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="738B01A1-3C77-88F6-4736-514B64973E7C">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>5BF14CA2-DE5F-CD4A-BB81-DADF7F1009E0</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="6F816154-5EC6-F8E0-9CA9-CC916D1E79DD">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>D4F6532A-92E6-FEA9-D1DF-D0D38D57306F</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 CHAR</dataTypeSize>
+<ownDataTypeParameters>120 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="482AF45E-923E-E4FC-6771-59E621717097" name="pk persona">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>3649C9E2-89F6-1A61-FF39-33A7F2E9D9AE</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5558444B-8965-9F55-0B9F-53B25B89027E</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="811EDA19-076B-AD16-19D0-EC3190070176" name="uk persona rut">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>CF33C2E5-B2B1-6852-C96C-4D0DB59B8F95</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+</identifier>
+</identifiers>
+</Entity>

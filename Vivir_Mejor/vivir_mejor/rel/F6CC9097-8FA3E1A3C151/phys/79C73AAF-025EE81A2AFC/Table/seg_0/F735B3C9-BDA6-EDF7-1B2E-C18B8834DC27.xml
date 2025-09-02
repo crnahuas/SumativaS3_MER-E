@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="Medico" directorySegmentName="seg_0" id="F735B3C9-BDA6-EDF7-1B2E-C18B8834DC27">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="especialidad" id="004E416E-BCEA-90E0-115B-6D3E3C6EAFF8">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_supervisor" id="258357A9-21D1-ED12-915C-5799E4B7AF1D">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_persona" id="5692AF4F-F700-7631-5608-2C93A6E2244C">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_medico_personal" id="38EBDAE8-EC31-5DCE-5FB9-C2BF872FB092">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_medico_supervisor" id="FF04388F-B0DB-C3B3-0515-2C6B6C2DB5C7">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="pk_medico" id="30FF3598-55F5-245D-DA8D-2417FD86F1FC">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

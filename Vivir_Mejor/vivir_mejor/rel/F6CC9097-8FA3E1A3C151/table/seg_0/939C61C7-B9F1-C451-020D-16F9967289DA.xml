@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="939C61C7-B9F1-C451-020D-16F9967289DA" name="Residente">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>2D798EC2-C617-E5F8-D7A7-8491A60CCCCD</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_persona" id="0960BDA8-D8A8-0722-0212-0FE32B69EA7E">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>8597CE60-735D-B1E0-B7CB-5002CA60E6C2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5D814B1A-C0CE-9E53-E3E3-62B2D3F5EFAB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7057956-09E2-0EC5-F6E7-7641394981BD" referredColumn="2E266D27-69FE-F226-7761-8C82EACFAEDF"/>
+</associations>
+</Column>
+<Column name="es_autonomo" id="3547ED1B-0309-6F4A-6C78-E8F7D05FA5B7">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>EC7B2B7B-0AF7-03A5-4685-D46C3E555553</importedID>
+<constraintName>ck_residente_aut</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>40BD147F-1E71-7AFD-397D-8759577ADB80</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_residente_aut</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="240015B7-2792-6BC8-F1DE-77136FA78011" name="pk_residente">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>4A3B3EAB-35FC-1E81-EB1A-DBEC378CA0B8</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0960BDA8-D8A8-0722-0212-0FE32B69EA7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3929FB03-D85D-274A-B6B9-5200D66C2B9C" name="fk_residente_persona">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0960BDA8-D8A8-0722-0212-0FE32B69EA7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

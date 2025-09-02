@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_contrato_apoderado" directorySegmentName="seg_0" id="DD499AEE-C3CD-5AE7-FC81-B5C31B646CCE">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>A6CC80AB-9865-D39E-6C31-52BD550E5DC3</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<sourcePk>482AF45E-923E-E4FC-6771-59E621717097</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>69D51595-F4ED-E83F-2561-3E6CA430455B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>35DD47CD-3393-8369-7FB4-5C0BF07FA5E5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

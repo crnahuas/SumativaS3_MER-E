@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1817C7B9-C3B1-1902-CA39-96467751D136" name="Cuidador">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>304C5B5A-4997-EA14-DB03-FCB9555A0E7E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_persona" id="3E70F306-E1D1-819D-C3E1-0A7E76B6E251">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>156B8B87-783B-D43C-E88A-70292EC6E0BF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5D814B1A-C0CE-9E53-E3E3-62B2D3F5EFAB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6E3733D4-A544-1826-9CA0-97A640CB8C83" referredColumn="7444B354-658D-DEDA-86A8-7E679783F82D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B937BAA-2CB6-DDC6-CD8B-A3AA88A0DA40" name="pk_cuidador">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>94C7CB18-D8CC-8B60-C572-859CB09AA62D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E70F306-E1D1-819D-C3E1-0A7E76B6E251"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26523306-A254-DB98-AC1C-1484106DC943" name="fk_cuidador_personal">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E70F306-E1D1-819D-C3E1-0A7E76B6E251"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

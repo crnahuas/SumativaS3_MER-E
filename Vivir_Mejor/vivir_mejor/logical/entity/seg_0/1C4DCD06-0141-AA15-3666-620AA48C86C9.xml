@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C4DCD06-0141-AA15-3666-620AA48C86C9" name="ResidentePermanente">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>A96A0BCC-7330-58E2-A9E0-98CB4AFA9DC5</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id persona" id="8562570C-D214-E41E-B7A8-72152BD97EA8">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>444E0E41-5F63-3585-C712-82190335D476</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<referedAttribute>801F17E9-281B-AD6D-73E8-F07F2C0BE0DD</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="historial clinico" id="C53B8914-C206-E8C7-44C8-61577E4B0280">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>41EC42A9-FE9A-0D03-156E-65FDF0678199</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="035E6DAE-6BE6-FCB2-79E7-91D8FB5EFAB0" name="pk residente perm">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>897FD250-6749-4611-E32F-79E6395B1DD1</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8562570C-D214-E41E-B7A8-72152BD97EA8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

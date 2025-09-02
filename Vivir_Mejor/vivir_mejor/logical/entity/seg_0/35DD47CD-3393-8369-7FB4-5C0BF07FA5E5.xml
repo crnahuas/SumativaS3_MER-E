@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="35DD47CD-3393-8369-7FB4-5C0BF07FA5E5" name="Contrato">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>758EE6E0-44CC-D228-256E-E3DFF7064AA9</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id contrato" id="8526A88B-FAFC-2E2E-18D4-36D8811EF6E6">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>0EF45177-CC81-8559-0986-66B2A5BC16CB</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha inicio" id="E79AD0F8-6DC0-8A1F-6103-4107F710FA44">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>1493EC07-745D-346C-DA08-9611057893AB</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha termino" id="CAAC0C90-658B-093A-96A4-0E0BEF2FE440">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>D83869AE-4450-C758-BA64-27B06C5BD68F</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo financiamiento" id="097ED3E9-A790-402F-B274-F7065E3614FD">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>FCDC5759-3527-DEB1-50D5-1E4566C28BC0</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id apoderado" id="DAEA6C4D-71AF-03B0-14AE-84A6707648F2">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>DD499AEE-C3CD-5AE7-FC81-B5C31B646CCE</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<referedAttribute>5558444B-8965-9F55-0B9F-53B25B89027E</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="405897D8-252A-FF07-447E-3B1A73F38C4F" name="pk contrato">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>80262DDA-44A4-4DB7-5425-EEBD9D5AA041</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8526A88B-FAFC-2E2E-18D4-36D8811EF6E6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

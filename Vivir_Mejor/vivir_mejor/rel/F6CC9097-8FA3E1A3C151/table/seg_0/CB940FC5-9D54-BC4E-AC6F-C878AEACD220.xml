@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB940FC5-9D54-BC4E-AC6F-C878AEACD220" name="Personal">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>D22EB594-AB12-F1F5-52B1-A2ED6CF7FDB4</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_persona" id="7444B354-658D-DEDA-86A8-7E679783F82D">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>58CECA59-E32C-5889-8B4C-7EF185FFDCAF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5D814B1A-C0CE-9E53-E3E3-62B2D3F5EFAB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C82E9FD-F80B-72D2-09E2-F747678AD95A" referredColumn="2E266D27-69FE-F226-7761-8C82EACFAEDF"/>
+</associations>
+</Column>
+<Column name="fecha_ingreso" id="C3F7608B-EB9D-4138-088B-73053DBB1B2D">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>540EA44D-A056-08ED-8DBD-306976AFAD27</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0A6279D8-D836-26C0-1DF6-27532816B627</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_personal_fing</notNullConstraintName>
+</Column>
+<Column name="id_residencia" id="F10DDC35-2726-0F27-EA1A-A79F796C955F">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>3B797E62-BA2D-15F2-7A61-71046DE7AC03</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5D814B1A-C0CE-9E53-E3E3-62B2D3F5EFAB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_personal_res</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="D43E229B-94AE-743A-2C9A-F566C9E9F316" referredColumn="6E95A699-6D0B-63ED-40EC-7D7D37BD8E41"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="83252881-1A0B-106F-8C1F-4A8140715805" name="pk_personal">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>8852FD52-EE43-897F-02AE-57C92ED78EB5</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7444B354-658D-DEDA-86A8-7E679783F82D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDB56A90-5B7D-FEF7-51C3-6E277C94860A" name="ix_personal_res">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>0CE70D93-75A7-BF96-E149-0EBA8CDA592F</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F10DDC35-2726-0F27-EA1A-A79F796C955F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64C4551B-C6BE-C98A-2699-2CCFCC558287" name="fk_personal_persona">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7444B354-658D-DEDA-86A8-7E679783F82D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4ECF5EB0-B4C9-EB76-5C85-4BC1D124EEB1" name="fk_personal_residencia">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F10DDC35-2726-0F27-EA1A-A79F796C955F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

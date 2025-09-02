@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_asig_no_solape" directorySegmentName="seg_0" id="91B96B5A-0F1F-3CB4-83F7-6FB4F670B8C8">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:43 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE
+  v_cnt INTEGER;
+  v_new_fin DATE;
+BEGIN
+  -- Normaliza fin NULL como una fecha 'muy en el futuro'
+  v_new_fin := NVL(:NEW.fecha_termino, DATE '9999-12-31');
+
+  -- Validación de rango correcto
+  IF :NEW.fecha_inicio > v_new_fin THEN
+     RAISE_APPLICATION_ERROR(-20001, 'La fecha de término debe ser >= fecha de inicio.');
+  END IF;
+
+  -- Solapamiento por HABITACION
+  SELECT COUNT(*) INTO v_cnt
+  FROM AsignacionHabitacion a
+  WHERE a.id_habitacion = :NEW.id_habitacion
+    AND ( :OLD.id_asignacion IS NULL OR a.id_asignacion <> :OLD.id_asignacion )
+    AND :NEW.fecha_inicio <= NVL(a.fecha_termino, DATE '9999-12-31')
+    AND v_new_fin         >= a.fecha_inicio;
+
+  IF v_cnt > 0 THEN
+     RAISE_APPLICATION_ERROR(-20002, 'Solapamiento de asignación en la misma habitación.');
+  END IF;
+
+  -- Solapamiento por RESIDENTE
+  SELECT COUNT(*) INTO v_cnt
+  FROM AsignacionHabitacion a
+  WHERE a.id_residente = :NEW.id_residente
+    AND ( :OLD.id_asignacion IS NULL OR a.id_asignacion <> :OLD.id_asignacion )
+    AND :NEW.fecha_inicio <= NVL(a.fecha_termino, DATE '9999-12-31')
+    AND v_new_fin         >= a.fecha_inicio;
+
+  IF v_cnt > 0 THEN
+     RAISE_APPLICATION_ERROR(-20003, 'El residente ya tiene una habitación activa en el rango.');
+  END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>3E438CA4-4113-6087-F9B3-AE390010BB38</table>
+</TriggerOraclev10g>

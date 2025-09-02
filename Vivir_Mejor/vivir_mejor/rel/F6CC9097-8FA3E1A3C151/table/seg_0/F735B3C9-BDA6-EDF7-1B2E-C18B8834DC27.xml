@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F735B3C9-BDA6-EDF7-1B2E-C18B8834DC27" name="Medico">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>CE51ECC5-C794-81C8-CDE5-40FA7072199B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_persona" id="5692AF4F-F700-7631-5608-2C93A6E2244C">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>8E06BC8E-C3CC-3A56-B12C-FC2E18ACD984</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5D814B1A-C0CE-9E53-E3E3-62B2D3F5EFAB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C94FD28A-B083-AFE6-6F5F-4EAC15F98C65" referredColumn="7444B354-658D-DEDA-86A8-7E679783F82D"/>
+</associations>
+</Column>
+<Column name="especialidad" id="004E416E-BCEA-90E0-115B-6D3E3C6EAFF8">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>A04496E9-6F91-E72D-A4F6-6EAA31A61C11</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>ED026219-5A9F-0332-64CF-D0304993A26B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_medico_esp</notNullConstraintName>
+</Column>
+<Column name="id_supervisor" id="258357A9-21D1-ED12-915C-5799E4B7AF1D">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>3EFDEADF-2595-794D-4F3A-1283350CB0B5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5D814B1A-C0CE-9E53-E3E3-62B2D3F5EFAB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9023C03F-DF12-4267-FC75-8B01B740CE21" referredColumn="5692AF4F-F700-7631-5608-2C93A6E2244C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="30FF3598-55F5-245D-DA8D-2417FD86F1FC" name="pk_medico">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>37B50A48-F1C3-C4C4-F082-BB068435101E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5692AF4F-F700-7631-5608-2C93A6E2244C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38EBDAE8-EC31-5DCE-5FB9-C2BF872FB092" name="fk_medico_personal">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5692AF4F-F700-7631-5608-2C93A6E2244C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF04388F-B0DB-C3B3-0515-2C6B6C2DB5C7" name="fk_medico_supervisor">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="258357A9-21D1-ED12-915C-5799E4B7AF1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

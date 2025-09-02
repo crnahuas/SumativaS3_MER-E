@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="79A16173-8675-CEF2-DD22-2FFA020BC80B" name="Habitacion">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>4435D4BE-0436-8E40-19D8-DBB5162F70E4</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_habitacion" id="6E3DB127-14F3-0E68-8E95-F48179D8B0DD">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>895A7297-836B-6EE1-E19E-A32C1768912E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5D814B1A-C0CE-9E53-E3E3-62B2D3F5EFAB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_residencia" id="10BBDCE2-AC09-D088-1C40-95B1D53E6121">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>804B1E4C-6F3A-AC14-9372-FCA51B785338</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5D814B1A-C0CE-9E53-E3E3-62B2D3F5EFAB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_hab_res</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="89CF1AB0-AFC8-CA86-25A8-F68F194D678C" referredColumn="6E95A699-6D0B-63ED-40EC-7D7D37BD8E41"/>
+</associations>
+</Column>
+<Column name="numero" id="AB1C3B97-2EEF-D1D9-0984-784BF28F145B">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>713C1386-BB63-FFDD-8581-3BC89ADE85E3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>63265949-0807-C5A5-C4DC-1D23B71865AA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_hab_num</notNullConstraintName>
+</Column>
+<Column name="tipo" id="4FEFE880-41E6-DAF7-7E9D-391DCAACDE35">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>27CA0483-90D8-043F-711E-5F774B6391E6</importedID>
+<constraintName>ck_hab_tipo</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="C" description=""/>
+<valueDef value="I" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_hab_tipo</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="50B1FC5B-A215-2EB4-B62E-69A45473CAB6" name="pk_habitacion">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>DCFBFCF0-D31C-549E-118B-95188AE711B2</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E3DB127-14F3-0E68-8E95-F48179D8B0DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA2A41E2-66F2-1FC6-B7B7-9DD19897F6D0" name="uk_hab_res_num">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>B256FDEF-EEB0-DE4E-5E30-21E158A1C793</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10BBDCE2-AC09-D088-1C40-95B1D53E6121"/>
+<colUsage columnID="AB1C3B97-2EEF-D1D9-0984-784BF28F145B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2B14BFA-27C6-D5E7-F6AA-E190B7693C2C" name="ix_hab_res">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>4B7C1A64-A7E6-B00F-EA3D-DABB90E0D8A5</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10BBDCE2-AC09-D088-1C40-95B1D53E6121"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A76D6E8-579E-3799-CE9C-8D10E5F40702" name="fk_habitacion_residencia">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10BBDCE2-AC09-D088-1C40-95B1D53E6121"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

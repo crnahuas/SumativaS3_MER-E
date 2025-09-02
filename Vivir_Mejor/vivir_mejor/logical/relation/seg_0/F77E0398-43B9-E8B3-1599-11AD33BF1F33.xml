@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_personal_residencia" directorySegmentName="seg_0" id="F77E0398-43B9-E8B3-1599-11AD33BF1F33">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>D43E229B-94AE-743A-2C9A-F566C9E9F316</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<sourcePk>E31F2E8E-DA69-8B53-62F7-A75B351DB67D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>00741209-221E-3B6E-BBE3-1C7EFCA44A18</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>975ABD69-92A1-E9A1-4BD9-B6D2E96CA2E5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

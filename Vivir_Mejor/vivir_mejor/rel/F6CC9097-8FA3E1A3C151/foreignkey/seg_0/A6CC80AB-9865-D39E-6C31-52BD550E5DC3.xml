@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A6CC80AB-9865-D39E-6C31-52BD550E5DC3" containerWithKeyObject="758EE6E0-44CC-D228-256E-E3DFF7064AA9" localFKIndex="B43D9B35-531B-C81B-6548-DBEA3CB04F21" name="fk_contrato_apoderado">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>7A103DBC-D034-B8FE-FAD5-ED79078C32F4</importedID>
+<referredTableLongName>Persona</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>22B57B07-1094-1CCC-B443-62D9786C6902</referredTableID>
+<keyObject>3649C9E2-89F6-1A61-FF39-33A7F2E9D9AE</keyObject>
+<referredKeyID>3649C9E2-89F6-1A61-FF39-33A7F2E9D9AE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_persona</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

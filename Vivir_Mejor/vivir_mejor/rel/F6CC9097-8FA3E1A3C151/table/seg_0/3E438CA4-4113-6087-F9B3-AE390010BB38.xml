@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E438CA4-4113-6087-F9B3-AE390010BB38" name="AsignacionHabitacion">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>AE385430-FC92-3C78-B2F3-3D88B9CE40EA</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_asignacion" id="E48B9F78-F6BB-0D23-2212-952960743CBA">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>EE905481-CEF5-5F0F-5C0C-C1E5C4356E96</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5D814B1A-C0CE-9E53-E3E3-62B2D3F5EFAB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_residente" id="B381E01A-788B-BBA9-3877-46CB9067C612">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>3D3CF610-7915-8FCF-ED6A-1FBCDF4EF1A9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5D814B1A-C0CE-9E53-E3E3-62B2D3F5EFAB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_asig_res</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="C2C71A5B-AD3D-D614-D517-42594ACECDA9" referredColumn="0960BDA8-D8A8-0722-0212-0FE32B69EA7E"/>
+</associations>
+</Column>
+<Column name="id_habitacion" id="6B6FCAC8-69DD-EF0A-BD61-C88AF121FE49">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>40994205-FE50-E13B-4E6F-C696EE927D0E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5D814B1A-C0CE-9E53-E3E3-62B2D3F5EFAB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_asig_hab</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="3A3A6167-5062-0C94-2D48-B4A4F49A2D92" referredColumn="6E3DB127-14F3-0E68-8E95-F48179D8B0DD"/>
+</associations>
+</Column>
+<Column name="fecha_inicio" id="EB896D6D-922C-5759-43BC-E2F80A0BFA6B">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>FE7C7B19-FD07-5492-E4FE-ED5AAE4FB6CA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0A6279D8-D836-26C0-1DF6-27532816B627</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>nn_asig_ini</notNullConstraintName>
+</Column>
+<Column name="fecha_termino" id="37DF9A65-3DEE-0943-7B5C-C47B885DA9E2">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>218315EA-BDF8-EB98-292B-95CB318B24CD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0A6279D8-D836-26C0-1DF6-27532816B627</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3963A16C-FCC1-CFDF-E1B0-365C5AFC9D59" name="pk_asignacion">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>78DE2429-F64E-437C-6EF5-F3DB479FD4DA</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E48B9F78-F6BB-0D23-2212-952960743CBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0853078C-65AF-5233-07C8-CC0483679299" name="ix_asig_residente">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>9464B774-7C7C-0006-5D44-312BED9881AA</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B381E01A-788B-BBA9-3877-46CB9067C612"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76DE6B1D-CFBF-E1F3-11B6-9EC880A4512D" name="ix_asig_habitacion">
+<sourceDDLFile>vivir_mejor_ddl.sql</sourceDDLFile>
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<importedID>3E712057-65F7-7187-51EB-3FA522DA5D82</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B6FCAC8-69DD-EF0A-BD61-C88AF121FE49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="527F3653-E857-7487-B67F-58801FC1BA69" name="fk_asig_habitacion">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B6FCAC8-69DD-EF0A-BD61-C88AF121FE49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D336E932-E712-CA0B-A391-69BF8996CC10" name="fk_asig_residente">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:19:47 UTC</createdTime>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B381E01A-788B-BBA9-3877-46CB9067C612"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

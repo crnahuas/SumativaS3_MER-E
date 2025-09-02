@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="F6CC9097-0222-7D49-4495-8FA3E1A3C151" mainViewID="B9641BE0-840C-3DBE-7258-A8744480322F">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:11:42 UTC</createdTime>
+<ownerDesignName>DatosVivirMejor</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>79C73AAF-E1A7-E669-7DF0-025EE81A2AFC</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>vivir_mejor_ddl.sql</fileName>
+<pathName>/Users/cristian/Downloads</pathName>
+<dbType>14</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

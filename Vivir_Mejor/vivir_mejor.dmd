@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="vivir_mejor" id="FACDF02A-33D1-097C-A9B2-89742751870F" version="3.5">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 01:11:39 UTC</createdTime>
+<ownerDesignName>DatosVivirMejor</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>FACDF02A-33D1-097C-A9B2-89742751870F</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="7F67501F-1F70-8C74-11A8-730B8B9B4338">
+<designStoragePath>/vivir_mejor_ddl</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

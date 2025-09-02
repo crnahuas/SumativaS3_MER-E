@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_anexo_contrato" directorySegmentName="seg_0" id="395FA19F-90AE-4B8D-FEF1-191D79CDCBC6">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>609AB3B7-BF17-7834-424D-0C9069C37BFB</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<sourcePk>405897D8-252A-FF07-447E-3B1A73F38C4F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>35DD47CD-3393-8369-7FB4-5C0BF07FA5E5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F4B61C8A-2220-D990-0BEA-0CA3D002DAC7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_medico_supervisor" directorySegmentName="seg_0" id="37DFE0F0-CC4E-47C0-D345-FE43301A98DF">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>9023C03F-DF12-4267-FC75-8B01B740CE21</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<targetPk>B02BF78F-C71C-0D46-3538-E3F850D8C78D</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0A3A2C93-2C8A-C2F0-DC4A-E2763E218D3D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0A3A2C93-2C8A-C2F0-DC4A-E2763E218D3D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

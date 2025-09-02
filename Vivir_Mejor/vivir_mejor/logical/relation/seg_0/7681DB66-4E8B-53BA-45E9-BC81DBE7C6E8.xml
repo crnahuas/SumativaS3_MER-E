@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_asig_residente" directorySegmentName="seg_0" id="7681DB66-4E8B-53BA-45E9-BC81DBE7C6E8">
+<createdBy>cristian</createdBy>
+<createdTime>2025-09-02 03:46:29 UTC</createdTime>
+<generatorID>C2C71A5B-AD3D-D614-D517-42594ACECDA9</generatorID>
+<ownerDesignName>vivir_mejor</ownerDesignName>
+<engineerTo>
+<item key="F6CC9097-0222-7D49-4495-8FA3E1A3C151" value="true"/>
+</engineerTo>
+<sourcePk>F8979A56-15D4-9737-C52F-71DCCCFF65ED</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FD27345E-C9F7-BCF6-52B6-43CA0754CCD2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>682DC824-319E-D100-91A4-54779F7D5F5B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
